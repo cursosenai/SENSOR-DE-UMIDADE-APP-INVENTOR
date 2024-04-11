@@ -1,7 +1,6 @@
 #include <DHT.h>
 #include <SoftwareSerial.h>
 
-
 SoftwareSerial bluetooth(2,3);
 
 #define HT A0
@@ -21,15 +20,11 @@ void loop() {
   if(isnan(u)){
     Serial.println("erro com DHT");
     return;
-
   }
   Serial.print("Umidade: ");
   Serial.print(u);
   Serial.println("%");
-
   Serial.println("Dados Enviadis");
   bluetooth.print(u);
-
   delay(300);
-
 }
