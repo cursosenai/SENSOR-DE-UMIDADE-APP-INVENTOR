@@ -24,7 +24,7 @@ void loop() {
   Serial.print("Umidade: ");
   Serial.print(u);
   Serial.println("%");
-  Serial.println("Dados Enviadis");
+  Serial.println("Dados Enviados");
   bluetooth.print(u);
   delay(300);
 }
